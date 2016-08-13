@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">RetrofitSplash</string>
+    <string name="app_name">Huge Test</string>
+    <string name="copy_test_miguel_flores">Test By Miguel Flores</string>
+    <string name="copy_currency_exchange">Currency Exchange</string>
+    <string name="copy_ok">Ok</string>
+    <string name="copy_exchange_results">Exchange Results</string>
+    <string name="hint_type_usd">Type Amount</string>
 </resources>

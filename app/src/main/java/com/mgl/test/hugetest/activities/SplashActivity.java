@@ -1,20 +1,23 @@
 package com.mgl.test.hugetest.activities;
 
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.mgl.test.hugetest.R;
+import com.mgl.test.hugetest.utils.animations.GeneralAnimations;
+import com.mgl.test.hugetest.utils.manager.FontManager;
 
 public class SplashActivity extends AppCompatActivity {
 
     private static final String TAG = SplashActivity.class.getName();
-    private CountDownTimer timer;
     private ImageView splashImageView;
+    private TextView textViewName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,24 +29,39 @@ public class SplashActivity extends AppCompatActivity {
 
     private void initView() {
         splashImageView = (ImageView) findViewById(R.id.imageView_splash);
+        textViewName = (TextView) findViewById(R.id.textView_creator_name);
     }
 
     private void init() {
-        //timer = new CountDownTimer(1800, 200) {
-        timer = new CountDownTimer(200, 200) {
-            @Override
-            public void onTick(long l) {
-                Log.e(TAG, "time " + l);
-                splashImageView.setRotation(splashImageView.getRotation() + 45);
-            }
+        loadFonts();
+        showLogoAnimation();
+    }
 
+    private void loadFonts() {
+        FontManager.init(this);
+    }
+
+
+
+    private void showLogoAnimation() {
+        GeneralAnimations.animateFadeIn(splashImageView, 1000, 250, new AnimatorListenerAdapter() {
             @Override
-            public void onFinish() {
-                Log.e(TAG, "go to activirty");
-                goToMainActivity();
+            public void onAnimationEnd(Animator animation) {
+                super.onAnimationEnd(animation);
+                showBottomName();
             }
-        };
-        timer.start();
+        });
+    }
+
+    private void showBottomName() {
+        GeneralAnimations.animateFadeIn(textViewName, 1250, 0, new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                super.onAnimationEnd(animation);
+                goToMainActivity();
+                finish();
+            }
+        });
     }
 
     private void goToMainActivity() {

@@ -1,10 +1,12 @@
 package com.mgl.test.hugetest.presenter;
 
+import com.mgl.test.hugetest.R;
 import com.mgl.test.hugetest.constants.CurrencyConstants;
 import com.mgl.test.hugetest.model.CurrencyConvertModel;
 import com.mgl.test.hugetest.services.RateConversionService;
 import com.mgl.test.hugetest.services.utils.ServiceCallback;
-import com.mgl.test.hugetest.views.items.ExchangeResultItem;
+import com.mgl.test.hugetest.utils.NumberUtils;
+import com.mgl.test.hugetest.views.models.ExchangeResultItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,28 +43,59 @@ public class CurrencyExchangePresenter {
 
         if (response.hasCurrency(CurrencyConstants.GBP)) {
             Float val = calculateExchange(amount, response.getGBP());
-            exchangeList.add(new ExchangeResultItem(CurrencyConstants.GBP, val));
+            ExchangeResultItem item = createResultItem(amount, baseCurrency, val, CurrencyConstants.GBP);
+            exchangeList.add(item);
         }
 
         if (response.hasCurrency(CurrencyConstants.EUR)) {
             Float val = calculateExchange(amount, response.getEUR());
-            exchangeList.add(new ExchangeResultItem(CurrencyConstants.EUR, val));
+            ExchangeResultItem item = createResultItem(amount, baseCurrency, val, CurrencyConstants.EUR);
+            exchangeList.add(item);
         }
 
         if (response.hasCurrency(CurrencyConstants.JPY)) {
             Float val = calculateExchange(amount, response.getJPY());
-            exchangeList.add(new ExchangeResultItem(CurrencyConstants.JPY, val));
+            ExchangeResultItem item = createResultItem(amount, baseCurrency, val, CurrencyConstants.JPY);
+            exchangeList.add(item);
         }
 
         if (response.hasCurrency(CurrencyConstants.BRL)) {
             Float val = calculateExchange(amount, response.getBRL());
-            exchangeList.add(new ExchangeResultItem(CurrencyConstants.BRL, val));
+            ExchangeResultItem item = createResultItem(amount, baseCurrency, val, CurrencyConstants.BRL);
+            exchangeList.add(item);
         }
 
-        view.onExchangeResult(exchangeList, response.getDate());
+        if (exchangeList.isEmpty()) {
+            view.showMessage("empty");
+        } else {
+            view.onExchangeResult(exchangeList, response.getDate());
+        }
+
         view.hideLoading();
 
         return exchangeList;
+    }
+
+    private ExchangeResultItem createResultItem(float fromAmount, String fromCurrency, Float toAmount, String toCurrency) {
+        fromAmount = NumberUtils.formatDecimal(fromAmount,2);
+        toAmount = NumberUtils.formatDecimal(toAmount,2);
+        return new ExchangeResultItem(fromAmount, getFlagFromCurrency(fromCurrency), toAmount, getFlagFromCurrency(toCurrency));
+    }
+
+    private int getFlagFromCurrency(String currency) {
+        switch (currency) {
+            case CurrencyConstants.BRL:
+                return R.drawable.brasil_flag;
+            case CurrencyConstants.EUR:
+                return R.drawable.europe_flag;
+            case CurrencyConstants.GBP:
+                return R.drawable.gb_flag;
+            case CurrencyConstants.USD:
+                return R.drawable.usa_flag;
+            case CurrencyConstants.JPY:
+                return R.drawable.japan_flag;
+        }
+        return 0;
     }
 
     public Float calculateExchange(float amount, Float conversionRate) {
@@ -75,6 +108,8 @@ public class CurrencyExchangePresenter {
         void hideLoading();
 
         void showLoading();
+
+        void showMessage(String message);
 
         void showError(String message);
     }
