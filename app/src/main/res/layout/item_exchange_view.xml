@@ -6,29 +6,57 @@
     android:background="@android:color/white">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
+        android:id="@+id/separator"
+        android:layout_width="@dimen/arrow_width"
+        android:layout_height="@dimen/arrow_height"
         android:layout_centerInParent="true"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@drawable/right_arrow" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/imageView_from_flag"
+        android:layout_width="@dimen/flag_size"
+        android:layout_height="@dimen/flag_size"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_margin="5dp"
+        android:layout_margin="@dimen/spacing_small"
         android:textColor="@android:color/black"
-        tools:text="Name" />
+        tools:src="@drawable/usa_flag" />
 
-    <TextView
-        android:id="@+id/textView_value"
+    <com.mgl.test.hugetest.views.custom.DescriptionTextView
+        android:id="@+id/textView_from_currency"
+        style="@style/normalTextBlack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginStart="@dimen/spacing_large"
+        android:layout_toEndOf="@+id/imageView_from_flag"
+        android:layout_toRightOf="@+id/imageView_from_flag"
+        tools:text="100" />
+
+    <ImageView
+        android:id="@+id/imageView_to_flag"
+        android:layout_width="@dimen/flag_size"
+        android:layout_height="@dimen/flag_size"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_margin="5dp"
+        android:layout_marginEnd="@dimen/spacing_small"
+        android:layout_marginRight="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_small"
         android:textColor="@android:color/black"
+        tools:src="@drawable/gb_flag" />
+
+    <com.mgl.test.hugetest.views.custom.DescriptionTextView
+        android:id="@+id/textView_to_currency"
+        style="@style/normalTextBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/spacing_large"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:layout_toLeftOf="@+id/imageView_to_flag"
+        android:layout_toStartOf="@+id/imageView_to_flag"
+        android:gravity="center"
         tools:text="100" />
 
 </RelativeLayout>

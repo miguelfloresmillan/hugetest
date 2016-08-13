@@ -6,7 +6,9 @@ import com.mgl.test.hugetest.constants.CurrencyConstants;
 import com.mgl.test.hugetest.model.CurrencyConvertModel;
 import com.mgl.test.hugetest.model.RateCurrencyModel;
 import com.mgl.test.hugetest.presenter.CurrencyExchangePresenter;
-import com.mgl.test.hugetest.views.items.ExchangeResultItem;
+import com.mgl.test.hugetest.views.models.ExchangeResultItem;
+
+import junit.framework.Assert;
 
 import org.junit.Before;
 import org.junit.runner.RunWith;
@@ -18,6 +20,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.verify;
 
 @RunWith(PowerMockRunner.class)
@@ -85,6 +88,40 @@ public class Test {
         assertTrue(list != null && !list.isEmpty());
     }
 
-    
+    @org.junit.Test
+    public void assureEmptyResponse() {
+        CurrencyConvertModel currencyConvertModel = new CurrencyConvertModel();
+        currencyConvertModel.setBase("USD");
+        currencyConvertModel.setRates(new RateCurrencyModel());
+        List<ExchangeResultItem> list = presenter.processExchange(currencyConvertModel, amount, baseCurrency);
+        Assert.assertTrue(list.isEmpty());
+    }
+
+    @org.junit.Test
+    public void assureEmptyResponseWithMessage() {
+
+        CurrencyConvertModel currencyConvertModel = new CurrencyConvertModel();
+        currencyConvertModel.setBase("USD");
+        currencyConvertModel.setRates(new RateCurrencyModel());
+        List<ExchangeResultItem> list = presenter.processExchange(currencyConvertModel, amount, baseCurrency);
+        Assert.assertTrue(list.isEmpty());
+        verify(view).showMessage(anyString());
+    }
+
+    @org.junit.Test
+    public void assureItemValue() {
+        CurrencyConvertModel currencyConvertModel = new CurrencyConvertModel();
+        currencyConvertModel.setBase("USD");
+
+        RateCurrencyModel rateCurrencyModel = new RateCurrencyModel();
+        rateCurrencyModel.setBrlCurrency(1f);
+        currencyConvertModel.setRates(rateCurrencyModel);
+
+        List<ExchangeResultItem> list = presenter.processExchange(currencyConvertModel, amount, baseCurrency);
+
+        //assertTrue(list.get(0).getCurrencyName().equals("BRL"));
+        //assertTrue(list.get(0).getValue().equals(100f));
+
+    }
 
 }
