@@ -9,6 +9,7 @@ import com.mgl.test.hugetest.utils.NumberUtils;
 import com.mgl.test.hugetest.views.models.ExchangeResultItem;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class CurrencyExchangePresenter {
@@ -38,6 +39,12 @@ public class CurrencyExchangePresenter {
     }
 
     public List<ExchangeResultItem> processExchange(CurrencyConvertModel response, float amount, String baseCurrency) {
+
+        if (response == null) {
+            view.showMessage("Error Loading Information");
+            view.hideLoading();
+            return Collections.emptyList();
+        }
 
         List<ExchangeResultItem> exchangeList = new ArrayList<>();
 
@@ -76,9 +83,9 @@ public class CurrencyExchangePresenter {
         return exchangeList;
     }
 
-    private ExchangeResultItem createResultItem(float fromAmount, String fromCurrency, Float toAmount, String toCurrency) {
-        fromAmount = NumberUtils.formatDecimal(fromAmount,2);
-        toAmount = NumberUtils.formatDecimal(toAmount,2);
+    public ExchangeResultItem createResultItem(float fromAmount, String fromCurrency, Float toAmount, String toCurrency) {
+        fromAmount = NumberUtils.formatDecimal(fromAmount, 2);
+        toAmount = NumberUtils.formatDecimal(toAmount, 2);
         return new ExchangeResultItem(fromAmount, getFlagFromCurrency(fromCurrency), toAmount, getFlagFromCurrency(toCurrency));
     }
 
@@ -99,6 +106,12 @@ public class CurrencyExchangePresenter {
     }
 
     public Float calculateExchange(float amount, Float conversionRate) {
+        if (amount < 0) {
+            amount = 0;
+        }
+        if (conversionRate < 0) {
+            conversionRate = 0f;
+        }
         return amount * conversionRate;
     }
 

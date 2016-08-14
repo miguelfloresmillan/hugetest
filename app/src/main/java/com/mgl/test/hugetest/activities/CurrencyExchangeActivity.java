@@ -30,10 +30,9 @@ import com.mgl.test.hugetest.views.models.ExchangeResultItem;
 
 import java.util.List;
 
-public class CurrencyExchangeActivity extends AppCompatActivity implements CurrencyExchangePresenter.CurrencyExchangeView, View.OnClickListener, TextView.OnEditorActionListener, TextWatcher {
+public class CurrencyExchangeActivity extends AppCompatActivity implements CurrencyExchangePresenter.CurrencyExchangeView, TextView.OnEditorActionListener, TextWatcher {
 
     private CurrencyExchangePresenter presenter;
-    private Button calculateButton;
     private NormalEditText currencyEditText;
     private TextView resultTextView;
     private RecyclerView recyclerView;
@@ -58,7 +57,6 @@ public class CurrencyExchangeActivity extends AppCompatActivity implements Curre
     }
 
     private void initView() {
-        calculateButton = (Button) findViewById(R.id.button_calculate_exchange);
         currencyEditText = (NormalEditText) findViewById(R.id.editText_currency_value);
         resultTextView = (TextView) findViewById(R.id.textView_result);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
@@ -75,7 +73,6 @@ public class CurrencyExchangeActivity extends AppCompatActivity implements Curre
     }
 
     private void initListener() {
-        calculateButton.setOnClickListener(this);
         currencyEditText.setOnEditorActionListener(this);
         currencyEditText.addTextChangedListener(this);
     }
@@ -88,11 +85,6 @@ public class CurrencyExchangeActivity extends AppCompatActivity implements Curre
                 return new ExchangeResultView(getBaseContext());
             }
         });
-    }
-
-    @Override
-    public void onClick(View view) {
-        calculateCurrencyExchange(currencyEditText.getText().toString());
     }
 
     @Override
