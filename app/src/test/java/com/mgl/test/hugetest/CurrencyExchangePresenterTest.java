@@ -1,13 +1,12 @@
 package com.mgl.test.hugetest;
 
 
-import com.mgl.test.hugetest.activities.CurrencyExchangeActivity;
 import com.mgl.test.hugetest.constants.CurrencyConstants;
+import com.mgl.test.hugetest.fragments.ResultExchangeFragment;
 import com.mgl.test.hugetest.model.CurrencyConvertModel;
 import com.mgl.test.hugetest.model.RateCurrencyModel;
 import com.mgl.test.hugetest.presenter.CurrencyExchangePresenter;
 import com.mgl.test.hugetest.services.RateConversionService;
-import com.mgl.test.hugetest.services.utils.ServiceCallback;
 import com.mgl.test.hugetest.views.models.ExchangeResultItem;
 
 import junit.framework.Assert;
@@ -16,10 +15,7 @@ import org.hamcrest.core.Is;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
-import org.mockito.invocation.InvocationOnMock;
-import org.mockito.stubbing.Answer;
 import org.powermock.modules.junit4.PowerMockRunner;
 
 import java.util.List;
@@ -47,7 +43,7 @@ public class CurrencyExchangePresenterTest {
     private RateConversionService rateConversionService;
 
     @Mock
-    private CurrencyExchangeActivity view;
+    private ResultExchangeFragment view;
 
     @Before
     public void setup() {

@@ -12,6 +12,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\WINDOWS\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.0\2b802460eea20f8f2ad9c08c74e0f14718e88aa9\okhttp-3.3.0.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.1"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\okhttp-3.3.0_011649cdb03ed0d90d33d9b53b8cf279cef0683f.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\WINDOWS\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.8.0\5ea7af56cc7c567ed9856d99efb30740e9b17ff\okio-1.8.0.jar"
         jumboMode="true"
         optimize="false"
@@ -27,105 +36,6 @@
         revision="24.0.1"
         sha1="894922f67adeaaef51f077a29e315da21a3382d3">
         <dex dex="E:\programacion\repositorios\hugetest2\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.0.0_961328b295e34ba93c0234ec7b108d167bb82a55.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\programacion\repositorios\hugetest2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="24.0.1"
-        sha1="10cd534d19b6934ea25fad660c611ae3f5fc8a11">
-        <dex dex="E:\programacion\repositorios\hugetest2\app\build\intermediates\pre-dexed\debug\instant-run_171719392cf043ca82d846f1c617851d6d5bf29c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\WINDOWS\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="24.0.1"
-        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
-        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\gson-2.7_5dfba44ce8f5795935a6ef4ddcdd38164037f9d8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\programacion\repositorios\hugeTest\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="24.0.1"
-        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
-        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.1.1_bdd9029073316ff0abeaf44a338d350eb29896cf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\programacion\repositorios\hugeTest\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\libs\internal_impl-24.1.1.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="24.0.1"
-        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
-        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\internal_impl-24.1.1_f6f3a96024b77d433838f0fe0d6db9ed314dac81.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\WINDOWS\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.1.0\2de7cd8b95b7021b1d597f049bcb422055119f2c\retrofit-2.1.0.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="24.0.1"
-        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
-        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\retrofit-2.1.0_12169c481aaf99880aaf443a586375d80a29deb3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\programacion\repositorios\hugeTest\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="24.0.1"
-        sha1="6d7d803871e3203465f71a163e7af104f807b446">
-        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.1.1_9b96f6cab85d2358b0b8f0b079b6a5dd9fcd1f40.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\programacion\repositorios\hugeTest\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="24.0.1"
-        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
-        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.1.1_4845d7b167680bb7a54549f71a5b79101d8adafd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\programacion\repositorios\hugeTest\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-alpha6\jars\classes.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="24.0.1"
-        sha1="683e0c40e56227acb71bcd29fee25fe417ae734e">
-        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.0-alpha6_220d3e7ca5a954fd8189b64a055a7e85de0b09dd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\programacion\repositorios\hugeTest\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="24.0.1"
-        sha1="80404db179b47933ba25d99c3b6cdf1cafd5d8eb">
-        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_d0b776b25cfd8aa0578e9b1c607ca60c12b8151b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\WINDOWS\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\adapter-rxjava\2.1.0\693eddc23e87ab13f9cf5001707ce8e7e1d1ff01\adapter-rxjava-2.1.0.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="24.0.1"
-        sha1="693eddc23e87ab13f9cf5001707ce8e7e1d1ff01">
-        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\adapter-rxjava-2.1.0_059d5b707496170c30c2cfcd47facccb09be2c55.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\WINDOWS\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.0\2b802460eea20f8f2ad9c08c74e0f14718e88aa9\okhttp-3.3.0.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="24.0.1"
-        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
-        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\okhttp-3.3.0_011649cdb03ed0d90d33d9b53b8cf279cef0683f.jar" />
     </item>
     <item
         is-multidex="false"
@@ -174,12 +84,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="E:\programacion\repositorios\hugetest2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.1"
+        sha1="c06fa76e56a75a1e32a48dc69bad97ec69fdf874">
+        <dex dex="E:\programacion\repositorios\hugetest2\app\build\intermediates\pre-dexed\debug\instant-run_171719392cf043ca82d846f1c617851d6d5bf29c.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="E:\programacion\repositorios\hugetest2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="false"
         revision="24.0.1"
-        sha1="7ebc5f4913e45801d55c22eb81d048e17c0c48f0">
+        sha1="b5715ee8ff72150b722d6935a46139a26afea2a1">
         <dex dex="E:\programacion\repositorios\hugetest2\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_1cb31d8ea8a1c7c45adbbf471bc638bf003ccdc1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\WINDOWS\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.1"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\gson-2.7_5dfba44ce8f5795935a6ef4ddcdd38164037f9d8.jar" />
     </item>
     <item
         is-multidex="false"
@@ -189,6 +117,15 @@
         revision="24.0.1"
         sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
         <dex dex="E:\programacion\repositorios\hugetest2\app\build\intermediates\pre-dexed\debug\internal_impl-24.1.1_844f75e655c7b4fc966d39eab593e295bd83a5e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\programacion\repositorios\hugeTest\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.1"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.1.1_bdd9029073316ff0abeaf44a338d350eb29896cf.jar" />
     </item>
     <item
         is-multidex="false"
@@ -210,12 +147,39 @@
     </item>
     <item
         is-multidex="false"
+        jar="E:\programacion\repositorios\hugeTest\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\libs\internal_impl-24.1.1.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.1"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\internal_impl-24.1.1_f6f3a96024b77d433838f0fe0d6db9ed314dac81.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="E:\programacion\repositorios\hugeTest\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="false"
         revision="24.0.1"
         sha1="f62e763609f65e47dc6c498760a4accf02776788">
         <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.1.1_bf9ab407b0c21dc3412b4154c67e4c3ac614c091.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\WINDOWS\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.1.0\2de7cd8b95b7021b1d597f049bcb422055119f2c\retrofit-2.1.0.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.1"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\retrofit-2.1.0_12169c481aaf99880aaf443a586375d80a29deb3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\programacion\repositorios\hugeTest\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.1"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.1.1_9b96f6cab85d2358b0b8f0b079b6a5dd9fcd1f40.jar" />
     </item>
     <item
         is-multidex="false"
@@ -228,12 +192,57 @@
     </item>
     <item
         is-multidex="false"
+        jar="E:\programacion\repositorios\hugeTest\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.1"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.1.1_4845d7b167680bb7a54549f71a5b79101d8adafd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\programacion\repositorios\hugeTest\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-alpha6\jars\classes.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.1"
+        sha1="683e0c40e56227acb71bcd29fee25fe417ae734e">
+        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.0-alpha6_220d3e7ca5a954fd8189b64a055a7e85de0b09dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\programacion\repositorios\hugetest2\app\libs\mpandroidchartlibrary-2-2-4.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.1"
+        sha1="e5455fb794bfcbeb75da252dffd907794614f7fd">
+        <dex dex="E:\programacion\repositorios\hugetest2\app\build\intermediates\pre-dexed\debug\mpandroidchartlibrary-2-2-4_844c27e2aa311db4846e195a85d3a021da7119ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="E:\programacion\repositorios\hugetest2\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="false"
         revision="24.0.1"
         sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
         <dex dex="E:\programacion\repositorios\hugetest2\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.1.1_89ef8221359b0f41017764c22f565f37782cbac9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\programacion\repositorios\hugeTest\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.1"
+        sha1="80404db179b47933ba25d99c3b6cdf1cafd5d8eb">
+        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_d0b776b25cfd8aa0578e9b1c607ca60c12b8151b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\WINDOWS\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\adapter-rxjava\2.1.0\693eddc23e87ab13f9cf5001707ce8e7e1d1ff01\adapter-rxjava-2.1.0.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="24.0.1"
+        sha1="693eddc23e87ab13f9cf5001707ce8e7e1d1ff01">
+        <dex dex="E:\programacion\repositorios\hugeTest\app\build\intermediates\pre-dexed\debug\adapter-rxjava-2.1.0_059d5b707496170c30c2cfcd47facccb09be2c55.jar" />
     </item>
     <item
         is-multidex="false"

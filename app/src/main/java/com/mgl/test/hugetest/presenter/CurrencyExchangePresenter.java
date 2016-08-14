@@ -15,6 +15,7 @@ import java.util.List;
 public class CurrencyExchangePresenter {
 
     private CurrencyExchangeView view;
+    private List<ExchangeResultItem> currentExchange;
 
     public CurrencyExchangePresenter(CurrencyExchangeView view) {
         this.view = view;
@@ -75,6 +76,7 @@ public class CurrencyExchangePresenter {
         if (exchangeList.isEmpty()) {
             view.showMessage("empty");
         } else {
+            this.currentExchange = exchangeList;
             view.onExchangeResult(exchangeList, response.getDate());
         }
 
@@ -113,6 +115,14 @@ public class CurrencyExchangePresenter {
             conversionRate = 0f;
         }
         return amount * conversionRate;
+    }
+
+    public List<ExchangeResultItem> getCurrentExchange() {
+        return currentExchange;
+    }
+
+    public void saveCurrentExchange() {
+
     }
 
     public interface CurrencyExchangeView {

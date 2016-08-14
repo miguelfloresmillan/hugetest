@@ -5,4 +5,8 @@
     <string name="copy_ok">Ok</string>
     <string name="copy_exchange_results">Exchange Results</string>
     <string name="hint_type_usd">Type Amount</string>
+    <string name="copy_save_button">Save To Graph</string>
+    <string name="copy_saved">Saved To Graph</string>
+    <string name="copy_graph">Graph</string>
+    <string name="copy_exchange">Exchange</string>
 </resources>
