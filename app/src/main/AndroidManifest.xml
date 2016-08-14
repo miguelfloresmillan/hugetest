@@ -10,14 +10,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name="com.mgl.test.hugetest.activities.SplashActivity">
+        <activity
+            android:name="com.mgl.test.hugetest.activities.SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.mgl.test.hugetest.activities.CurrencyExchangeActivity"></activity>
+        <activity
+            android:name="com.mgl.test.hugetest.activities.CurrencyExchangeActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

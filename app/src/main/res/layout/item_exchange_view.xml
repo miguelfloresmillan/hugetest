@@ -22,18 +22,6 @@
         android:textColor="@android:color/black"
         tools:src="@drawable/usa_flag" />
 
-    <com.mgl.test.hugetest.views.custom.DescriptionTextView
-        android:id="@+id/textView_from_currency"
-        style="@style/normalTextBlack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="@dimen/spacing_large"
-        android:layout_marginStart="@dimen/spacing_large"
-        android:layout_toEndOf="@+id/imageView_from_flag"
-        android:layout_toRightOf="@+id/imageView_from_flag"
-        tools:text="100" />
-
     <ImageView
         android:id="@+id/imageView_to_flag"
         android:layout_width="@dimen/flag_size"
@@ -58,5 +46,19 @@
         android:layout_toStartOf="@+id/imageView_to_flag"
         android:gravity="center"
         tools:text="100" />
+
+    <com.mgl.test.hugetest.views.custom.DescriptionTextView
+        android:id="@+id/textView_from_currency"
+        style="@style/normalTextBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_centerVertical="true"
+        tools:text="100"
+        android:layout_alignBaseline="@+id/textView_to_currency"
+        android:layout_alignBottom="@+id/textView_to_currency"
+        android:layout_toRightOf="@+id/imageView_from_flag"
+        android:layout_toEndOf="@+id/imageView_from_flag" />
 
 </RelativeLayout>
